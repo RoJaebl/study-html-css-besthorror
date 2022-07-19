@@ -67,4 +67,4 @@ const postDev = gulp.parallel([webserver, watcher]);
 
 export const build = gulp.series([prepare, assets]);
 export const dev = gulp.series([build, postDev]);
-export const deploy = gulp.series([build, ghPage, prepare]);
+export const deploy = gulp.series([build, ghPage, clear]);
